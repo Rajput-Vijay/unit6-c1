@@ -5,7 +5,6 @@ export const Products = () => {
   // to get all products list on component mounts
   const [product,productData]=useState([])
 
-  const [price, setPrice] = useState(0)
   useEffect(() => {
     axios.get('https://movie-fake-server.herokuapp.com/products').then((response)=>{
                 productData(response.data)
@@ -35,7 +34,7 @@ export const Products = () => {
       <div className="products-list">
         {
           product.map((items)=> <div className="product">
-           <img src={items.image}/>
+           <img src={items.image} alt="Product-pic" />
            <div className="product-name">{items.title}</div>
            <div className="product-brand">{items.brand}</div>
            <div className="product-price">{items.price}</div>
