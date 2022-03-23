@@ -4,6 +4,8 @@ import axios from 'axios'
 export const Products = () => {
   // to get all products list on component mounts
   const [product,productData]=useState([])
+
+  const [price, setPrice] = useState(0)
   useEffect(() => {
     axios.get('https://movie-fake-server.herokuapp.com/products').then((response)=>{
                 productData(response.data)
@@ -20,6 +22,7 @@ export const Products = () => {
   //    sort by price
   const handleSort = (e) => {
     // dispach handle sort action to the store
+
   };
   return (
     <>
@@ -45,4 +48,8 @@ export const Products = () => {
         {/* {data && */}
           {/* data.map(() => { */}
             {/* return <div>display the results here</div>; */}
-          {/* })} 
+          {/* })} */}
+      </div>
+    </>
+  );
+};

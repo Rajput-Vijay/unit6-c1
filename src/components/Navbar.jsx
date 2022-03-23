@@ -22,4 +22,9 @@ export const Navbar = () => {
      {/* <h1>This is navbar</h1> */}
     <Link to="/">Home</Link>
     <Link to="/about">About</Link>
-    <Link to="/products">Products</L
+    <Link to="/products">Products</Link>
+  
+  </>
+  );
+
+};
