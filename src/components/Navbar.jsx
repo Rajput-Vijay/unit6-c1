@@ -20,9 +20,9 @@ export const Navbar = () => {
   return (
   <>
      {/* <h1>This is navbar</h1> */}
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/products">Products</Link>
+    <Link to="/" className='linking'>Home</Link>
+    <Link to="/about" className='linking'>About</Link>
+    <Link to="/products" className='linking'>Products</Link>
   
   </>
   );
